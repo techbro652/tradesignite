@@ -8,7 +8,7 @@ redirects = []
 
 [build]
 publish = "/Users/ai/Documents/tradesignite"
-publishOrigin = "default"
+publishOrigin = "ui"
 
 [build.environment]
 
