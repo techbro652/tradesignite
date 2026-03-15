@@ -1151,6 +1151,29 @@
       flex-shrink: 0;
     }
 
+    .crew-photo-block {
+      margin-top: 48px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .crew-photo-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .crew-photo-caption {
+      font-size: 15px;
+      color: var(--muted);
+      font-style: italic;
+      padding: 14px 20px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
     /* ── FOUNDERS ── */
     .founders-section {
       background: var(--dark);
@@ -1517,6 +1540,12 @@
         <div class="exit-proof-item">Built the brand from nothing</div>
         <div class="exit-proof-item">Successful business exit</div>
       </div>
+
+      <div class="crew-photo-block">
+        <img src="./crew-photo.jpg" alt="The SunBlockers Patio Covers crew after a completed installation in Las Vegas" loading="lazy" />
+        <p class="crew-photo-caption">The SunBlockers crew after a completed patio cover installation — Las Vegas, NV. This is the real-world experience we bring to every client.</p>
+      </div>
+
     </div>
   </section>
 
