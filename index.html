@@ -88,26 +88,36 @@
     }
 
     .nav-logo-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--orange);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
+      font-size: 28px;
       line-height: 1;
     }
 
     .nav-logo-text {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 22px;
+      font-size: 28px;
       color: var(--white);
       letter-spacing: 0.01em;
     }
 
     .nav-logo-text span { color: var(--orange); }
+
+    .footer-logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      color: var(--white);
+      letter-spacing: 0.01em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo-text span { color: var(--orange); }
+
+    .footer-logo-icon { font-size: 32px; line-height: 1; }
 
     .nav-cta {
       background: var(--orange);
@@ -1433,7 +1443,8 @@
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-      <img src="./logo.png" alt="TradesIgnite" class="nav-logo-img" />
+      <span class="nav-logo-icon">🔨</span>
+      <span class="nav-logo-text">Trades<span>Ignite</span></span>
     </a>
     <a href="#contact" class="nav-cta">Book a Free Call →</a>
   </nav>
@@ -1959,7 +1970,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo"><img src="./logo.png" alt="TradesIgnite" class="footer-logo-img" /></div>
+    <div class="footer-logo"><div class="footer-logo-text"><span class="footer-logo-icon">🔨</span>Trades<span>Ignite</span></div></div>
     <div class="footer-location">
       <div class="footer-location-item">
         <span class="footer-location-label">Headquarters:</span>&nbsp;Las Vegas, Nevada
