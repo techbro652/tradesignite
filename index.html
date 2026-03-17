@@ -1158,6 +1158,9 @@
 
     .crew-photo-block {
       margin-top: 48px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--border);
@@ -1165,15 +1168,17 @@
 
     .crew-photo-block img {
       width: 100%;
-      height: auto;
+      height: 380px;
+      object-fit: cover;
+      object-position: center;
       display: block;
     }
 
     .crew-photo-caption {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--muted);
       font-style: italic;
-      padding: 14px 20px;
+      padding: 12px 18px;
       background: var(--dark-2);
       border-top: 1px solid var(--border);
       text-align: center;
