@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TradesIgnite — More Leads. More Jobs. More Revenue.</title>
   <meta name="description" content="The growth agency built for blue collar businesses. We combined real trades experience with millions in digital ad revenue to get you more qualified leads." />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <meta property="og:title" content="TradesIgnite — More Leads. More Jobs. More Revenue." />
+  <meta property="og:description" content="The growth agency built for blue collar businesses. Get more qualified leads with an agency that's actually been in your shoes." />
+  <meta property="og:image" content="./og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TradesIgnite — More Leads. More Jobs. More Revenue." />
+  <meta name="twitter:description" content="The growth agency built for blue collar businesses." />
+  <meta name="twitter:image" content="./og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -55,6 +65,19 @@
       background: rgba(13,13,13,0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo-img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .footer-logo-img {
+      height: 72px;
+      width: auto;
+      display: block;
+      margin: 0 auto 10px;
     }
 
     .nav-logo {
@@ -123,14 +146,14 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      filter: brightness(0.28);
+      filter: brightness(0.45) contrast(1.1);
     }
 
     .hero-bg::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(13,13,13,0.25) 0%, rgba(13,13,13,0.65) 60%, rgba(13,13,13,1) 100%);
+      background: linear-gradient(to bottom, rgba(13,13,13,0.15) 0%, rgba(13,13,13,0.5) 60%, rgba(13,13,13,1) 100%);
       z-index: 1;
     }
 
@@ -149,10 +172,9 @@
       background: rgba(232,101,26,0.15);
       border: 1px solid rgba(232,101,26,0.35);
       color: var(--orange);
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      letter-spacing: 0.02em;
       padding: 7px 16px;
       border-radius: 100px;
       margin-bottom: 28px;
@@ -165,10 +187,10 @@
       font-weight: 900;
       font-size: clamp(52px, 8vw, 88px);
       line-height: 1.0;
-      text-transform: uppercase;
       letter-spacing: -0.01em;
       color: var(--white);
       margin-bottom: 24px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.6);
     }
 
     .hero h1 em {
@@ -178,10 +200,11 @@
 
     .hero-sub {
       font-size: clamp(19px, 2vw, 22px);
-      color: rgba(240,240,240,0.75);
+      color: rgba(240,240,240,0.85);
       max-width: 600px;
       margin: 0 auto 40px;
       line-height: 1.7;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
     }
 
     .hero-actions {
@@ -254,7 +277,6 @@
     .hero-stat-label {
       font-size: 16px;
       color: var(--muted);
-      text-transform: uppercase;
       letter-spacing: 0.06em;
     }
 
@@ -270,22 +292,22 @@
     }
 
     .section-label {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      letter-spacing: 0.04em;
       color: var(--orange);
       margin-bottom: 14px;
+      text-align: center;
     }
 
     .section-h2 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 900;
       font-size: clamp(38px, 5vw, 58px);
-      text-transform: uppercase;
       line-height: 1.05;
       color: var(--white);
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .section-h2 em {
@@ -298,6 +320,8 @@
       color: var(--muted);
       line-height: 1.7;
       max-width: 600px;
+      text-align: center;
+      margin: 0 auto;
     }
 
     /* ── PROBLEM ── */
@@ -307,23 +331,22 @@
 
     .problem-grid {
       display: grid;
-      grid-template-columns: 5fr 6fr;
+      grid-template-columns: 1fr 1fr;
       gap: 56px;
-      align-items: stretch;
+      align-items: center;
       margin-top: 56px;
     }
 
     .problem-image {
       border-radius: 12px;
       overflow: hidden;
-      min-height: 480px;
+      aspect-ratio: 4/3;
     }
 
     .problem-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
       display: block;
     }
 
@@ -410,10 +433,9 @@
       background: rgba(232,101,26,0.15);
       border: 1px solid rgba(232,101,26,0.3);
       color: var(--orange);
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      letter-spacing: 0.03em;
       padding: 5px 12px;
       border-radius: 100px;
       margin-bottom: 24px;
@@ -424,7 +446,6 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 900;
       font-size: 42px;
-      text-transform: uppercase;
       line-height: 1.05;
       color: var(--white);
       margin-bottom: 20px;
@@ -433,9 +454,13 @@
     .casestudy-content h3 span { color: var(--orange); }
 
     .casestudy-content p {
-      font-size: 19px;
+      font-size: 17px;
       color: var(--muted);
       line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .casestudy-content p:last-of-type {
       margin-bottom: 32px;
     }
 
@@ -465,7 +490,6 @@
     .metric-label {
       font-size: 15px;
       color: var(--muted);
-      text-transform: uppercase;
       letter-spacing: 0.06em;
     }
 
@@ -476,7 +500,7 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 24px;
       margin-top: 56px;
     }
@@ -507,17 +531,21 @@
       margin-bottom: 24px;
     }
 
+    .service-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
     .service-card h3 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       font-size: 26px;
-      text-transform: uppercase;
       color: var(--white);
       margin-bottom: 12px;
     }
 
     .service-card p {
-      font-size: 19px;
+      font-size: 17px;
       color: var(--muted);
       line-height: 1.7;
       margin-bottom: 24px;
@@ -542,6 +570,125 @@
       content: '→';
       color: var(--orange);
       font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .social-platforms {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-platform {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(240,240,240,0.8);
+    }
+
+    .social-platform svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    /* ── CERTIFICATION STRIP ── */
+    .cert-section {
+      background: var(--dark);
+      padding: 48px 24px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cert-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .cert-label {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    .cert-badges {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--dark-3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 22px;
+    }
+
+    .cert-badge-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #4285F4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      flex-shrink: 0;
+    }
+
+    .cert-text-title {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+
+    .cert-text-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .cert-verified {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #4ade80;
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    .cert-verified::before {
+      content: '✓';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(74,222,128,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
       flex-shrink: 0;
     }
 
@@ -654,7 +801,7 @@
     .process-steps::before {
       content: '';
       position: absolute;
-      top: 32px;
+      top: 52px;
       left: 10%;
       right: 10%;
       height: 1px;
@@ -665,6 +812,13 @@
     .process-step {
       text-align: center;
       padding: 0 16px;
+    }
+
+    .process-step-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+      display: block;
+      line-height: 1;
     }
 
     .process-step-num {
@@ -686,14 +840,13 @@
     .process-step h4 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 20px;
-      text-transform: uppercase;
+      font-size: 22px;
       color: var(--white);
       margin-bottom: 8px;
     }
 
     .process-step p {
-      font-size: 19px;
+      font-size: 17px;
       color: var(--muted);
       line-height: 1.6;
     }
@@ -728,7 +881,6 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 900;
       font-size: 48px;
-      text-transform: uppercase;
       line-height: 1.05;
       color: var(--white);
       margin-bottom: 16px;
@@ -780,8 +932,7 @@
     .form-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 22px;
-      text-transform: uppercase;
+      font-size: 24px;
       color: var(--white);
       margin-bottom: 24px;
     }
@@ -795,7 +946,6 @@
       font-size: 15px;
       font-weight: 600;
       color: var(--muted);
-      text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-bottom: 6px;
     }
@@ -849,7 +999,7 @@
     footer {
       background: var(--dark-2);
       border-top: 1px solid var(--border);
-      padding: 40px 24px;
+      padding: 48px 24px;
       text-align: center;
     }
 
@@ -863,10 +1013,52 @@
 
     .footer-logo span { color: var(--orange); }
 
-    footer p {
-      font-size: 17px;
+    .footer-location {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+
+    .footer-location-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
       color: var(--muted);
     }
+
+    .footer-location-item::before {
+      content: '📍';
+      font-size: 14px;
+    }
+
+    .footer-location-label {
+      font-weight: 600;
+      color: rgba(240,240,240,0.5);
+    }
+
+    footer p {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 14px;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--orange); }
 
     /* ── ONLY AGENCY ── */
     .onlyagency-section {
@@ -932,32 +1124,58 @@
     .exit-proof-strip {
       display: flex;
       justify-content: center;
-      gap: 32px;
-      margin-top: 32px;
+      gap: 16px 32px;
+      margin-top: 40px;
       flex-wrap: wrap;
+      row-gap: 18px;
     }
 
     .exit-proof-item {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 17px;
+      gap: 10px;
+      font-size: 19px;
       color: var(--muted);
+      font-weight: 500;
     }
 
     .exit-proof-item::before {
       content: '✓';
-      width: 20px;
-      height: 20px;
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
       border-radius: 50%;
       background: rgba(232,101,26,0.2);
       color: var(--orange);
       font-weight: 700;
-      font-size: 11px;
+      font-size: 13px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+    }
+
+    .crew-photo-block {
+      margin-top: 48px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .crew-photo-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .crew-photo-caption {
+      font-size: 15px;
+      color: var(--muted);
+      font-style: italic;
+      padding: 14px 20px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      text-align: center;
     }
 
     /* ── FOUNDERS ── */
@@ -986,7 +1204,8 @@
       padding: 40px 36px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      text-align: center;
       transition: border-color 0.25s;
     }
 
@@ -1000,33 +1219,33 @@
     }
 
     .founder-avatar {
-      width: 80px;
-      height: 80px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
+      object-position: center top;
       border: 3px solid rgba(232,101,26,0.4);
       display: block;
     }
 
     .founder-badge {
       position: absolute;
-      bottom: -4px;
-      right: -4px;
+      bottom: 0px;
+      right: 0px;
       background: var(--orange);
       border-radius: 50%;
-      width: 26px;
-      height: 26px;
+      width: 34px;
+      height: 34px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 13px;
+      font-size: 16px;
     }
 
     .founder-role {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: var(--orange);
       margin-bottom: 6px;
     }
@@ -1034,17 +1253,17 @@
     .founder-name {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 32px;
-      text-transform: uppercase;
+      font-size: 34px;
       color: var(--white);
       margin-bottom: 16px;
     }
 
     .founder-bio {
-      font-size: 19px;
+      font-size: 18px;
       color: var(--muted);
       line-height: 1.75;
       margin-bottom: 28px;
+      text-align: left;
     }
 
     .founder-stats {
@@ -1073,7 +1292,6 @@
     .founder-stat-label {
       font-size: 15px;
       color: var(--muted);
-      text-transform: uppercase;
       letter-spacing: 0.06em;
     }
 
@@ -1097,8 +1315,14 @@
       }
 
       .casestudy-image {
-        min-height: 260px;
-        max-height: 300px;
+        height: 280px;
+        min-height: unset;
+        max-height: unset;
+        position: relative;
+      }
+
+      .casestudy-image-overlay {
+        background: linear-gradient(to bottom, transparent 60%, var(--dark-3));
       }
 
       .services-grid {
@@ -1118,6 +1342,11 @@
 
       .hero-stats {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .cert-inner {
+        flex-direction: column;
+        gap: 20px;
       }
     }
 
@@ -1149,18 +1378,46 @@
       }
 
       .founder-card {
-        padding: 24px 20px;
+        padding: 28px 20px;
         width: 100%;
         box-sizing: border-box;
       }
 
+      .founder-avatar {
+        width: 120px;
+        height: 120px;
+      }
+
       .founder-bio {
-        font-size: 16px;
+        font-size: 17px;
       }
 
       .founders-grid {
         width: 100%;
         overflow: hidden;
+      }
+
+      .exit-proof-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 8px;
+      }
+
+      .exit-proof-item {
+        font-size: 17px;
+      }
+
+      .exit-proof-item::before {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        font-size: 12px;
+      }
+
+      .footer-location {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
       }
     }
   </style>
@@ -1170,8 +1427,7 @@
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">🔥</div>
-      <div class="nav-logo-text">Trades<span>Ignite</span></div>
+      <img src="./logo.png" alt="TradesIgnite" class="nav-logo-img" />
     </a>
     <a href="#contact" class="nav-cta">Book a Free Call →</a>
   </nav>
@@ -1193,8 +1449,8 @@
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-num">$700K</div>
-          <div class="hero-stat-label">Revenue Built from $0</div>
+          <div class="hero-stat-num">$700K+</div>
+          <div class="hero-stat-label">Revenue From Our Patio Company</div>
         </div>
         <div class="hero-stat">
           <div class="hero-stat-num">$10M+</div>
@@ -1288,6 +1544,12 @@
         <div class="exit-proof-item">Built the brand from nothing</div>
         <div class="exit-proof-item">Successful business exit</div>
       </div>
+
+      <div class="crew-photo-block">
+        <img src="./crew-photo.jpg" alt="The SunBlockers Patio Covers crew after a completed installation in Las Vegas" loading="lazy" />
+        <p class="crew-photo-caption">The SunBlockers crew after a completed patio cover installation — Las Vegas, NV. This is the real-world experience we bring to every client.</p>
+      </div>
+
     </div>
   </section>
 
@@ -1300,13 +1562,16 @@
 
       <div class="casestudy-card">
         <div class="casestudy-image">
-          <img src="./casestudy-photo.jpg" alt="SunBlockers Patio Covers patio cover - $0 to $700K" loading="lazy" />
+          <img src="./mike-inspect.jpg" alt="Mike inspecting a completed SunBlockers patio cover installation" loading="lazy" />
           <div class="casestudy-image-overlay"></div>
         </div>
         <div class="casestudy-content">
           <div class="casestudy-tag">Real Client · Real Results</div>
           <h3>SunBlockers Patio Covers:<br /><span>$0 → $700K</span><br />In One Year</h3>
-          <p>Starting from scratch with zero revenue, zero brand recognition, and a competitive local market, our co-founder used paid ads, conversion-focused web pages, and a systematic follow-up process to build SunBlockers Patio Covers into a $700,000/year operation — without outside funding.</p>
+          <p>This client came to us struggling to generate consistent leads through traditional marketing channels. Their previous digital advertising campaigns were poorly optimized and produced very little return on investment.</p>
+          <p>After analyzing their market, competition, and service area, we implemented a targeted Google Ads and Facebook Ads strategy designed specifically for contractor lead generation.</p>
+          <p>Within the first few months, the campaign began generating a steady stream of qualified homeowner leads. This allowed the client to increase booked estimates, close more jobs, and scale their monthly revenue.</p>
+          <p>Our focus was not just on traffic, but on improving lead quality and conversion rates through better landing pages, ad targeting, and continuous optimization.</p>
           <div class="casestudy-metrics">
             <div class="metric">
               <div class="metric-num">$0</div>
@@ -1335,44 +1600,146 @@
       <p class="section-sub">We don't hand you a report and disappear. We run the campaigns, optimize the pages, and post the content — so you can focus on delivering the work.</p>
 
       <div class="services-grid">
+
+        <!-- Google Ads -->
         <div class="service-card">
-          <div class="service-icon">📣</div>
-          <h3>Paid Ads</h3>
-          <p>Google and Meta campaigns built specifically for blue collar businesses. We target homeowners with real buying intent and optimize every dollar for booked appointments — not just clicks.</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27 12.19 19.27C8.36003 19.27 5.00003 16.25 5.00003 12C5.00003 7.9 8.20003 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42003 2 2.03003 6.8 2.03003 12C2.03003 17.05 6.16003 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z" fill="#E8651A"/>
+            </svg>
+          </div>
+          <h3>Google Ads Management</h3>
+          <p>Dominate Google Search when homeowners are actively looking for your service. We build and manage campaigns that target high-intent buyers in your area, maximizing every dollar for booked appointments.</p>
           <ul class="service-features">
-            <li>Google Search + Local Service Ads</li>
-            <li>Meta/Facebook/Instagram Campaigns</li>
-            <li>Retargeting & Lookalike Audiences</li>
-            <li>Monthly reporting with real ROI</li>
+            <li>Google Search &amp; Local Service Ads</li>
+            <li>Geo-targeted campaigns for your service area</li>
+            <li>Keyword research &amp; negative list management</li>
+            <li>Monthly ROI reporting with real numbers</li>
           </ul>
         </div>
 
+        <!-- Facebook Ads -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="#E8651A" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </div>
+          <h3>Facebook Ads Management</h3>
+          <p>Reach homeowners before they start searching. Facebook and Instagram campaigns that build awareness, generate leads, and keep you top of mind with the right local audience.</p>
+          <ul class="service-features">
+            <li>Facebook &amp; Instagram ad campaigns</li>
+            <li>Lookalike &amp; retargeting audiences</li>
+            <li>Lead generation &amp; messenger ads</li>
+            <li>Creative testing &amp; continuous optimization</li>
+          </ul>
+        </div>
+
+        <!-- Website Design -->
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Website Design</h3>
+          <p>A website that works as hard as you do. We design fast, conversion-focused sites built specifically for blue collar businesses — professional, mobile-ready, and built to turn visitors into calls.</p>
+          <ul class="service-features">
+            <li>Custom design built for your brand</li>
+            <li>Mobile-first responsive layouts</li>
+            <li>Fast load times &amp; SEO foundations</li>
+            <li>Lead capture forms &amp; click-to-call</li>
+          </ul>
+        </div>
+
+        <!-- Website Optimization -->
         <div class="service-card">
           <div class="service-icon">⚡</div>
-          <h3>Website CRO</h3>
-          <p>Traffic means nothing if your website doesn't convert. We rebuild and optimize your pages so every visitor has a clear reason to book — using the same frameworks we used to scale SunBlockers Patio Covers.</p>
+          <h3>Website Optimization</h3>
+          <p>Traffic means nothing if your website doesn't convert. We optimize every page for maximum lead generation — using the same frameworks we used to scale SunBlockers Patio Covers from $0 to $700K.</p>
           <ul class="service-features">
             <li>Conversion-first landing pages</li>
             <li>Mobile-optimized design</li>
-            <li>Lead form & CTA optimization</li>
-            <li>A/B testing & data-driven improvement</li>
+            <li>Lead form &amp; CTA optimization</li>
+            <li>A/B testing &amp; data-driven improvement</li>
           </ul>
         </div>
 
+        <!-- Email Marketing -->
         <div class="service-card">
-          <div class="service-icon">📱</div>
-          <h3>Social Media</h3>
+          <div class="service-icon">✉️</div>
+          <h3>Email Marketing</h3>
+          <p>Turn every lead into a booked job with automated email sequences built for the trades. We write and deploy follow-up campaigns that keep you top of mind, re-engage cold leads, and convert estimates into signed contracts.</p>
+          <ul class="service-features">
+            <li>Automated lead follow-up sequences</li>
+            <li>Estimate & quote follow-up campaigns</li>
+            <li>Seasonal promotions & reactivation emails</li>
+            <li>List building & segmentation strategy</li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="service-card">
+          <div class="service-icon">📲</div>
+          <h3>Social Media Management</h3>
           <p>Consistent, professional social presence that builds trust with local homeowners and keeps you top of mind when they're ready to buy. Done-for-you — no more blank page stress.</p>
+          <div class="social-platforms">
+            <span class="social-platform">
+              <!-- Instagram -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram
+            </span>
+            <span class="social-platform">
+              <!-- TikTok -->
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.8 1.52V6.77a4.85 4.85 0 01-1.03-.08z"/>
+              </svg>
+              TikTok
+            </span>
+            <span class="social-platform">
+              <!-- Facebook -->
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+              Facebook
+            </span>
+          </div>
           <ul class="service-features">
             <li>3–5 posts per week across platforms</li>
             <li>Before/after project content</li>
-            <li>Reputation & review management</li>
+            <li>Reputation &amp; review management</li>
             <li>Local audience growth strategy</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
+
+  <!-- CERTIFICATION STRIP -->
+  <div class="cert-section">
+    <div class="cert-inner">
+      <div class="cert-label">Credentials &amp; Certifications</div>
+      <div class="cert-badges">
+        <div class="cert-badge">
+          <div class="cert-badge-icon">G</div>
+          <div>
+            <div class="cert-text-title">Google Analytics Certified</div>
+            <div class="cert-text-sub">Google Measurement &amp; Analytics</div>
+            <div class="cert-verified">Verified by Google</div>
+          </div>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-badge-icon" style="background: #4267B2;">f</div>
+          <div>
+            <div class="cert-text-title">Meta Blueprint Certified</div>
+            <div class="cert-text-sub">Facebook &amp; Instagram Advertising</div>
+            <div class="cert-verified">Verified by Meta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FOUNDERS -->
   <section class="founders-section">
@@ -1385,16 +1752,16 @@
 
       <div class="founders-grid">
 
-        <!-- Partner -->
+        <!-- Mike -->
         <div class="founder-card">
           <div class="founder-avatar-wrap">
-            <img class="founder-avatar" src="./mike-tan.jpg" alt="Mike Tan, Co-Founder" />
+            <img class="founder-avatar" src="./mike-tan.jpg" alt="Mike, Co-Founder" />
             <div class="founder-badge">🔨</div>
           </div>
-          <div class="founder-role">Co-Founder · Trades Expert</div>
-          <div class="founder-name">Mike Tan</div>
+          <div class="founder-role">Co-Founder, Head of Sales</div>
+          <div class="founder-name">Mike</div>
           <p class="founder-bio">
-            After spending a decade at Morgan Stanley Wealth Management developing expertise in financial strategy and business growth, he left the corporate world to build something of his own. He founded SunBlockers Patio Covers Patio Covers in Las Vegas, a blue-collar construction business specializing in patio covers and outdoor living spaces, and grew it from $0 to $700,000 in annual revenue within a single year while personally handling the marketing, sales, operations, and customer relationships. Having lived the realities of blue-collar entrepreneurship — early mornings, inconsistent leads, and the pressure of building a business from the ground up — he now uses that experience to help contractors and service-based businesses scale faster through smarter marketing systems and proven growth strategies.
+            After spending a decade at Morgan Stanley Wealth Management developing expertise in financial strategy and business growth, he left the corporate world to build something of his own. He founded SunBlockers Patio Covers in Las Vegas, a blue-collar construction business specializing in patio covers and outdoor living spaces, and grew it from $0 to $700,000 in annual revenue within a single year — personally handling the marketing, sales, operations, and customer relationships. Having lived the realities of blue-collar entrepreneurship, he now uses that experience to help contractors and service-based businesses scale faster through smarter marketing systems and proven growth strategies.
           </p>
           <div class="founder-stats">
             <div class="founder-stat">
@@ -1415,11 +1782,11 @@
         <!-- Chris -->
         <div class="founder-card">
           <div class="founder-avatar-wrap">
-            <img class="founder-avatar" src="./chris-longo.jpg" alt="Chris Longo, Co-Founder" />
+            <img class="founder-avatar" src="./chris-longo.jpg" alt="Chris, Co-Founder" />
             <div class="founder-badge">📈</div>
           </div>
-          <div class="founder-role">Co-Founder · Digital Growth</div>
-          <div class="founder-name">Chris Longo</div>
+          <div class="founder-role">Co-Founder, Chief Technology Officer</div>
+          <div class="founder-name">Chris</div>
           <p class="founder-bio">
             Over the past decade, Chris has built and scaled multiple digital businesses to 8 figures in combined revenue — managing millions in paid ad spend across Google, Meta, and beyond. He knows how to turn ad dollars into revenue, how to build conversion systems that actually work, and how to scale a business fast using digital channels. What sets him apart isn't just the numbers — it's the breadth. Ecommerce, lead gen, info products, direct response — he's driven growth across industries. Now he's bringing that entire playbook exclusively to blue collar businesses, a world that's been underserved by real digital expertise for far too long.
           </p>
@@ -1482,7 +1849,7 @@
         <div class="whyus-image">
           <img src="./whyus-photo.jpg" alt="Patio cover installation - TradesIgnite" loading="lazy" />
           <div class="whyus-badge">
-            <div class="whyus-badge-num">$2M+</div>
+            <div class="whyus-badge-num">$10M+</div>
             <div class="whyus-badge-label">In ad spend managed</div>
           </div>
         </div>
@@ -1500,23 +1867,27 @@
       </div>
       <div class="process-steps">
         <div class="process-step">
+          <span class="process-step-icon">📞</span>
           <div class="process-step-num">1</div>
           <h4>Free Strategy Call</h4>
           <p>We audit your current marketing, your market, and your competitors. You leave with a clear growth plan — even if you don't hire us.</p>
         </div>
         <div class="process-step">
+          <span class="process-step-icon">📊</span>
           <div class="process-step-num">2</div>
-          <h4>Build Your System</h4>
-          <p>We set up your campaigns, landing pages, and content pipeline. Everything is built to convert from day one.</p>
+          <h4>Business Analysis</h4>
+          <p>We go deep on your service area, competitors, and ideal customer. Every campaign we build is backed by real market data and industry insight.</p>
         </div>
         <div class="process-step">
+          <span class="process-step-icon">🚀</span>
           <div class="process-step-num">3</div>
-          <h4>Launch & Optimize</h4>
-          <p>Campaigns go live. We monitor performance daily, kill what doesn't work, and double down on what does.</p>
+          <h4>Launch Ad Campaigns</h4>
+          <p>Campaigns go live. We monitor performance daily, cut what doesn't work, and double down on what generates qualified leads.</p>
         </div>
         <div class="process-step">
+          <span class="process-step-icon">📈</span>
           <div class="process-step-num">4</div>
-          <h4>Scale Revenue</h4>
+          <h4>Scale and Optimize Results</h4>
           <p>Once we find what works, we scale. More budget, more reach, more booked jobs — without you lifting a finger.</p>
         </div>
       </div>
@@ -1582,9 +1953,22 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">Trades<span>Ignite</span></div>
+    <div class="footer-logo"><img src="./logo.png" alt="TradesIgnite" class="footer-logo-img" /></div>
+    <div class="footer-location">
+      <div class="footer-location-item">
+        <span class="footer-location-label">Headquarters:</span>&nbsp;Las Vegas, Nevada
+      </div>
+      <div class="footer-location-item">
+        <span class="footer-location-label">Satellite Office:</span>&nbsp;San Francisco, California
+      </div>
+    </div>
     <p>The growth agency built for blue collar businesses. &copy; 2026 TradesIgnite. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/terms-of-service">Terms of Service</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
   </footer>
 
 </body>
 </html>
+<!-- deploy test Sun Mar 15 10:38:06 PDT 2026 -->
